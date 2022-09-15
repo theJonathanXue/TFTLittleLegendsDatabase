@@ -23,8 +23,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/api/v1', apiRouter);
-app.use('/littleLegend', littleLegendRouter);
 app.use('/egg', eggRouter);
+app.use('/littleLegend', littleLegendRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

@@ -20,4 +20,9 @@ exports.getClientSideResourcesFor = template => ({
   javascript: template, stylesheet: template
 })
 
+exports.getLittleLegends = (name = '') => {
+  const filter = name === '' ? {} : { name };
+  return db.littleLegends.find(filter).toArray()
+    .then(docs => docs.map(doc => sanitizeMongoDocument(doc)));
+}
 

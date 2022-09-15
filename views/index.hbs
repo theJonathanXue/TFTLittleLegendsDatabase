@@ -1,13 +1,21 @@
-{{#each eggs}}
-<div class="egg-container">
-  <div class="content-container" align="center">
-    <h2>{{this.name}}</h2>
-    <img src="{{this.photo}}" alt="photo.png">
+{{#each littleLegends}}
+<div class="littleLegend-container">
+  <div class="photo-container">
+    <img src="{{this.photo}}" alt="photo.jpg">
   </div>
-  <div class="action-container" align="center">
-    <button class="app-button"> <img src="/images/view.svg"> </button>
-    <button class="app-button"> <img src="/images/delete.svg"> </button>
-    <button class="app-button"> <img src="/images/update.svg"> </button>
+  <div class="other-container">
+    <div class="content-container" align="justify">
+      <h2>{{this.name}}</h2>
+      <p>{{this.description}}</p>
+      <h3>
+        <strong>Price</strong> {{this.price}} Gold &nbsp;|&nbsp;
+        <strong>Stock</strong> {{this.stock}}
+      </h3>
+    </div>
+    <div class="action-container">
+      <button class="app-button"> <img src="/images/delete.svg"> </button>
+      <button class="app-button"> <img src="/images/update.svg"> </button>
+    </div>
   </div>
 </div>
 {{/each}}
