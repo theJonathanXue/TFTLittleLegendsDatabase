@@ -4,7 +4,7 @@ const connectionString = process.env.MONGO_URI || 'mongodb://localhost:27017';
 
 const littleLegendsCollectionName = 'littleLegends';
 const eggsCollectionName = 'eggs';
-const dbName = 'LLCollector';
+const dbName = 'inventoryDB';
 
 const makeConnection = async () => {
   const options = { useNewUrlParser: true, useUnifiedTopology: true };
