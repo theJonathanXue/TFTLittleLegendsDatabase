@@ -6,7 +6,7 @@ Database of avatars for players in [Teamfight Tactics](https://teamfighttactics.
 
 Performed CRUD actions on a database, from a node.js web app.
 
-There is photo adding and CRUD actions, but only for admin users. Try it yourself with admin password: "LLLover"
+There is photo adding and CRUD actions, but only for admin users. Try it yourself with admin password: "theJonathanXue"
 
 ## Built with
 
