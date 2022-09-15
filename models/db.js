@@ -1,6 +1,6 @@
 const mongoClient = require('mongodb').MongoClient;
 
-const connectionString = 'mongodb+srv://LittleLegendCollector:MLQaMMNFnhCiGEn5@cluster0.gdnccia.mongodb.net/?retryWrites=true&w=majority' || 'mongodb://localhost:27017';
+const connectionString = process.env.MONGO_URI || 'mongodb://localhost:27017';
 
 const littleLegendsCollectionName = 'littleLegends';
 const eggsCollectionName = 'eggs';
