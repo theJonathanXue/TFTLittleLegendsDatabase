@@ -4,10 +4,10 @@ const connectionString = process.env.MONGO_URI || 'mongodb://localhost:27017';
 
 const littleLegendsCollectionName = 'littleLegends';
 const eggsCollectionName = 'eggs';
-const dbName = 'inventoryDB';
+const dbName = 'LLCollector';
 
 const makeConnection = async () => {
-  const options = { 'useUnifiedTopology': true };
+  const options = { useNewUrlParser: true, useUnifiedTopology: true };
   const client = await mongoClient.connect(connectionString, options);
   const db = client.db(dbName);
   exports.eggs = db.collection(eggsCollectionName);
